@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fetch API Mini Project</title>
+    <link rel="stylesheet" href="./dist/output.css" />
+    <link rel="stylesheet" href="./src/custom.css">
+  </head>
+  <body>
+    <div
+      class=" min-h-screen p-5 flex items-center flex-col ">
+      <header class="w-full max-w-md">
+        <h1 class="font-bold text-3xl mb-2 item-center w-auto">
+          Typicode Todos
+        </h1>
+        <form id="todo-form" class="flex space-x-2 items-center">
+          <input
+            class="flex-1 w-auto border border-gray-600 outline-none py-1 px-4 rounded-md"
+            type="text"
+            id="title"
+            placeholder="Add Todo..." />
+          <button
+            class="bg-red-400 px-7 py-1 text-center text-white rounded large"
+            type="submit">
+            Add
+          </button>
+        </form>
+      </header>
+      <main class=" md:max-w-3xl mt-4">
+        <div id="todo-list" class="flex flex-col space-y-2 md:grid md:grid-cols-2 md:space-y-0 md:gap-2 w-3xl" >
+            <div class="hidden done bg-gray-100 border p-3 text-2xl border-gray-600 rounded-md font-bold cursor-pointer text-center "></div>
+        </div>
+      </main>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
